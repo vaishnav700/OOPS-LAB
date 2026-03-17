@@ -66,7 +66,7 @@ public class BookDetails
         String p1=s.next();
         System.out.println("Category");
         String c1=s.next();
-        Fiction ob2=new Fiction(b1,p1,c1);
+        Fiction ob2=new Fiction(p1,b1,c1);
         System.out.println("\n**Literature book**");
         System.out.println("----------------------");
         ob1.display();
