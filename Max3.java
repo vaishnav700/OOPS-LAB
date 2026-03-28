@@ -40,11 +40,17 @@ public class Max3 extends Frame implements ActionListener
         });   
 
     }
-    public void actionPerformed(AcionEvent ae)
+    public void actionPerformed(ActionEvent ae)
     {
         int n1,n2,n3,max;
         n1=Integer.parseInt(t1.getText());
         n2=Integer.parseInt(t2.getText());
         n3=Integer.parseInt(t3.getText());
+        max=Math.max(n1,Math.max(n2,n3));
+        tResult.setText(String.valueOf(max));
+    }
+    public static void main(String[] args)
+    {
+        new Max3();
     }
 }
